@@ -11,7 +11,13 @@
 /* Logo/Text */
 header{
     height: 100vh;
+    background-image: url("../img/ilustracion1.png");
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
+
+
 
 section{
     display: flex;
@@ -20,7 +26,7 @@ section{
 
 .logo{
     display:flex;
-    margin:3%;
+    margin-left:3%;
 }
 
 .logo img{
@@ -41,6 +47,19 @@ section{
     height: 90vh;
 }
 
+.firstPage{
+    display: flex;
+    flex-direction: row-reverse;
+}   
+
 .heading{
-    margin-bottom: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.heading p:first-of-type{
+    width: 200px;
+}
+
