@@ -12,7 +12,7 @@
 header{
     height: 100vh;
     background-image: url("../img/ilustracion1.png");
-    background-size:70%;
+    background-size:50%;
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -27,6 +27,7 @@ section{
 .logo{
     display:flex;
     margin-left:3%;
+    padding-top: 3%;
 }
 
 .logo img{
@@ -44,8 +45,16 @@ section{
 }
 
 .illustration img{
-    height: 90vh;
+    height: 80vh;
+    animation: falling 2s ease-in-out;
+    position: relative;
 }
+
+@keyframes falling{
+    from{top: 0px;}
+    to{top: 20px;}
+}
+
 
 .firstPage{
     display: flex;
@@ -57,9 +66,30 @@ section{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 4.2em;
+    padding-bottom: 25px;
 }
 
 .heading p:first-of-type{
-    width: 200px;
+    font-size: 1.5em;
+    padding-bottom: 25vh;
 }
 
+.heading p:first-of-type > img{
+    height: 25px;
+}
+
+
+.heading p:nth-child(3){
+    padding-right: 71%;
+    color: #ff3571;
+    font-weight: 600;
+}
+
+.page2 img{
+    width: 100vw;
+}
